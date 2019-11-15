@@ -12,11 +12,11 @@ namespace LabSheet7
         public static Random rng = new Random();
         public static string[] categories = new string[] { "travel ", "Entertainment", "Office" };
 
-        private int _Amount;
+        private decimal _Amount;
 
         public decimal _Cost
         {
-            get { return Amount; }
+            get { return _Amount; }
             set
             {
 
