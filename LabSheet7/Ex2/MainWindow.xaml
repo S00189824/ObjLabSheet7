@@ -11,8 +11,8 @@
             <ColumnDefinition Width="190*"/>
             <ColumnDefinition Width="207*"/>
         </Grid.ColumnDefinitions>
-        <ListBox HorizontalAlignment="Left" Height="282" Margin="47,69,0,0" VerticalAlignment="Top" Width="269"/>
-        <DatePicker HorizontalAlignment="Left" Margin="202.4,229,0,0" VerticalAlignment="Top" Height="27" Width="135" Grid.Column="1"/>
+        <ListBox x:Name="lxbox" HorizontalAlignment="Left" Height="282" Margin="47,69,0,0" VerticalAlignment="Top" Width="269"/>
+        <DatePicker x:Name="dxdate" HorizontalAlignment="Left" Margin="202.4,229,0,0" VerticalAlignment="Top" Height="27" Width="135" Grid.Column="1"/>
         <Button x:Name="btn_Addbutton" Content="Add" HorizontalAlignment="Left" Margin="262.4,332,0,0" VerticalAlignment="Top" Width="75" Click="btn_Addbutton_Click" Grid.Column="1"/>
         <ComboBox x:Name="cbxMemberType" HorizontalAlignment="Left" Margin="202.4,121,0,0" VerticalAlignment="Top" Width="135" Grid.Column="1"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="67.4,177,0,0" VerticalAlignment="Top" Height="27" Width="75" Grid.Column="1"/>

@@ -21,10 +21,12 @@ namespace Ex2
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random rng = new Random();
         ObservableCollection<Members> listofmembers;
         public MainWindow()
         {
             InitializeComponent();
+            listofmembers = new ObservableCollection<Members>();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -35,6 +37,12 @@ namespace Ex2
         private void btn_Addbutton_Click(object sender, RoutedEventArgs e)
         {
 
+
+            listofmembers.Add(new Members(txbName.Text,Members.MemberType[cbxMemberType.SelectedIndex],new DateTime(rng.Next(2000, 2015), dxdate.SelectedDate.Value.Month,dxdate.SelectedDate.Value.Day)));
+
+            lxbox.ItemsSource = listofmembers;
+
+            txblkNumberOfMembers.Text = Members.numberofmembers.ToString();
         }
     }
 }
